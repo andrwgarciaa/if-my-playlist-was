@@ -4,7 +4,8 @@ import { usePlaylist } from "@/providers/PlaylistProvider";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FromDBPlaylist, SpotifyPlaylist } from "@/types/spotify";
+import { FromDBPlaylist } from "@/types/spotify";
+import { Info } from "@mui/icons-material";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -56,6 +57,9 @@ export default function Home() {
       <div className="max-w-xs lg:max-w-[100vw] w-full space-y-4">
         <p className="text-2xl lg:text-4xl italic">
           “What if your Spotify playlist… wasn’t a playlist at all?”
+        </p>
+        <p className="text-xs">
+          Paste a Spotify playlist url below and find out!
         </p>
         <Playlist />
 
